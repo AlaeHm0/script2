@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="test" onchange="afficher()">
+        <option value="00">Coisir votre num compte</option>
+        
+    </select>
+    <div>
+    <table border="">
+        <tr>
+            <td colspan="2"><h1 id="num"></h1></td>
+        </tr>
+            <tr>
+                <td style="width: 100px;">Client</td>
+                <td style="width: 100px;"><label id="client"></label></td>
+            </tr>
+            <tr>
+                <td style="width: 100px;">Solde</td>
+                <td style="width: 100px;"><label id="solde"></label></td>
+            </tr>
+        </table>
+    </div>
+    <fieldset>
+        <legend>Type opération</legend>
+        <input type="radio" name="operation" id="RR">Retrait
+        <input type="radio" name="operation" id="RD">Dépot
+    </fieldset>
+    <label>Montant</label><input type="text" id="txtMt">
+    <div>
+        <input type="button" value="Ajouter opération" onclick="ajouter()">
+    </div>
+    <div>
+        <label >Liste des opérations :</label>
+        <ul id="ul1">
+        </ul>
+    </div>
+    
+    <script src="script.js" language="javascript"></script>
+</body>
+</html>
