@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
         
     </select>
     <div>
-    <table border="">
+    <table>
         <tr>
             <td colspan="2"><h1 id="num"></h1></td>
         </tr>
@@ -28,12 +29,12 @@
     </div>
     <fieldset>
         <legend>Type opération</legend>
-        <input type="radio" name="operation" id="RR">Retrait
-        <input type="radio" name="operation" id="RD">Dépot
+        <input type="radio" name="operation" id="RR" checked><label for="RR">Retrait</label>
+        <input type="radio" name="operation" id="RD"><label for="RD">Dépot</label>
     </fieldset>
     <label>Montant</label><input type="text" id="txtMt">
     <div>
-        <input type="button" value="Ajouter opération" onclick="ajouter()">
+        <input type="button" value="Ajouter opération" onclick="calculer()">
     </div>
     <div>
         <label >Liste des opérations :</label>
